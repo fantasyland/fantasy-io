@@ -1,0 +1,24 @@
+{
+  "name": "fantasy-io",
+  "version": "0.0.0",
+  "description": "IO control structure.",
+  "main": "io.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/puffnfresh/fantasy-io.git"
+  },
+  "keywords": [
+    "fantasyland",
+    "io",
+    "monad"
+  ],
+  "author": "Brian McKenna",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/puffnfresh/fantasy-io/issues"
+  },
+  "dependencies": {
+    "daggy": "0.0.1"
+  }
+}
