@@ -2,8 +2,8 @@
   "name": "fantasy-io",
   "version": "0.0.1",
   "description": "IO control structure.",
-  "main": "io.js",
-  "scripts": {},
+  "main": "fantasy-io.js",
+  "files": ["fantasy-io.js", "src/*.js"],
   "repository": {
     "type": "git",
     "url": "git://github.com/puffnfresh/fantasy-io.git"
@@ -19,6 +19,20 @@
     "url": "https://github.com/puffnfresh/fantasy-io/issues"
   },
   "dependencies": {
-    "daggy": "0.0.1"
+    "daggy": "0.0.1",
+    "fantasy-combinators": "0.0.1"
+  },
+  "devDependencies": {
+    "grunt-cli": "0.1.9",
+    "grunt": "0.4.x",
+    "grunt-contrib-jshint": "0.11.x",
+    "grunt-contrib-nodeunit": "0.4.x",
+    "fantasy-check": "0.1.4",
+    "fantasy-helpers": "0.0.x",
+    "fantasy-tuples": "0.0.1",
+    "fantasy-identities": "git+https://github.com/fantasyland/fantasy-identities.git"
+  },
+  "scripts": {
+    "test": "node --harmony_destructuring node_modules/grunt-contrib-nodeunit/node_modules/.bin/nodeunit test/*.js"
   }
 }
