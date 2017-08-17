@@ -19,7 +19,7 @@ IO.prototype[map] = function(f) {
 };
 
 IO.prototype[ap] = function(a) {
-    return this[chain]((f) => a[map](f));
+    return a[chain]((f) => this[map](f));
 };
 
 module.exports = IO;
