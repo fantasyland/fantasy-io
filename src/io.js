@@ -22,4 +22,9 @@ IO.prototype[ap] = function(a) {
     return this[chain]((f) => a[map](f));
 };
 
+IO.of = IO[of];
+IO.prototype.chain = IO.prototype[chain];
+IO.prototype.map = IO.prototype[map];
+IO.prototype.ap = IO.prototype[ap];
+
 module.exports = IO;

@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "description": "IO control structure.",
   "main": "fantasy-io.js",
-  "files": ["fantasy-io.js", "src/*.js"],
+  "files": [
+    "fantasy-io.js",
+    "src/*.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/puffnfresh/fantasy-io.git"
@@ -31,6 +34,6 @@
     "fantasy-identities": "git+https://github.com/fantasyland/fantasy-identities.git"
   },
   "scripts": {
-    "test": "node --harmony_destructuring node_modules/.bin/nodeunit test/*.js"
+    "test": "nodeunit test/io.js"
   }
 }
